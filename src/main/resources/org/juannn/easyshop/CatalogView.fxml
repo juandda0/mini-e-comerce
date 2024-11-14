@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juannn.easyshop.ViewControllers.CatalogController">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="51.0" layoutY="38.0" text="Catalog">
+               <font>
+                  <Font size="38.0" />
+               </font></Label>
+            <ImageView fx:id="ImageProduct1" fitHeight="150.0" fitWidth="191.0" layoutX="67.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/64521603-suéter-para-la-ropa-aislada-en-el-fondo-blanco.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageProduct2" fitHeight="150.0" fitWidth="180.0" layoutX="310.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/3001000051396-1723348727-135.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageProduct3" fitHeight="150.0" fitWidth="180.0" layoutX="558.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/3001000051433-1723349121-210.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageProduct4" fitHeight="150.0" fitWidth="158.0" layoutX="81.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/16801678310246.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageProduct5" fitHeight="150.0" fitWidth="180.0" layoutX="308.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/ADIQ0817-1.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="ImageProduct6" fitHeight="150.0" fitWidth="145.0" layoutX="573.0" layoutY="358.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/warmfit-merino-100-shirt.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="addProduct1" layoutX="190.0" layoutY="308.0" mnemonicParsing="false" text="Add" />
+            <Button fx:id="addProduct2" layoutX="421.0" layoutY="308.0" mnemonicParsing="false" text="Add" />
+            <Button fx:id="addProduct3" layoutX="672.0" layoutY="313.0" mnemonicParsing="false" text="Add" />
+            <Button fx:id="addProduct4" layoutX="180.0" layoutY="530.0" mnemonicParsing="false" text="Add" />
+            <Button fx:id="addProduct5" layoutX="424.0" layoutY="530.0" mnemonicParsing="false" text="Add" />
+            <Button fx:id="addProduct6" layoutX="658.0" layoutY="530.0" mnemonicParsing="false" text="Add" />
+            <Spinner fx:id="quantityProduct1" layoutX="67.0" layoutY="308.0" prefHeight="25.0" prefWidth="71.0" />
+            <Spinner fx:id="quantityProduct2" layoutX="308.0" layoutY="308.0" prefHeight="25.0" prefWidth="71.0" />
+            <Spinner fx:id="quantityProduct3" layoutX="558.0" layoutY="313.0" prefHeight="25.0" prefWidth="71.0" />
+            <Spinner fx:id="quantityProduct4" layoutX="80.0" layoutY="530.0" prefHeight="25.0" prefWidth="71.0" />
+            <Spinner fx:id="quantityProduct5" layoutX="310.0" layoutY="530.0" prefHeight="25.0" prefWidth="71.0" />
+            <Spinner fx:id="quantityProduct6" layoutX="573.0" layoutY="530.0" prefHeight="25.0" prefWidth="71.0" />
+            <Pane fx:id="profilePane" layoutX="672.0" layoutY="14.0" prefHeight="73.0" prefWidth="97.0" style="-fx-background-color: #636060;">
+               <children>
+                  <Label layoutX="32.0" layoutY="28.0" text="Profile" />
+               </children>
+            </Pane>
+            <Label layoutX="692.0" layoutY="93.0" text="User name" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
