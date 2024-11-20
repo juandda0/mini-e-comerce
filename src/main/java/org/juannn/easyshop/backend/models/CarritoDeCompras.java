@@ -1,10 +1,11 @@
 package org.juannn.easyshop.backend.models;
 
-import backend.datastructures.cola.Cola;
+import org.juannn.easyshop.backend.datastructures.cola.Cola;
+
 import java.util.ArrayList;
 
 public class CarritoDeCompras {
-    private Cola<Articulo> articulos;
+    /*private Cola<Articulo> articulos;
     private double total;
 
     public CarritoDeCompras() {
@@ -82,4 +83,5 @@ public class CarritoDeCompras {
         
         return totalConCantidad;
     }
+    */
 }

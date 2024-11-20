@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juannn.easyshop.ViewControllers.WelcomeController">
+<AnchorPane prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juannn.easyshop.ViewControllers.WelcomeController">
    <children>
-      <Pane prefHeight="600.0" prefWidth="800.0">
+      <Pane prefHeight="700.0" prefWidth="950.0">
          <children>
-            <Button fx:id="btnStart" layoutX="380.0" layoutY="348.0" text="Start" />
-            <Label layoutX="318.0" layoutY="245.0" text="Easy">
+            <Label layoutX="519.0" layoutY="278.0" text="Shop">
                <font>
-                  <Font size="38.0" />
+                  <Font name="Segoe UI Semibold" size="72.0" />
                </font>
             </Label>
-            <Label layoutX="392.0" layoutY="245.0" text="Shop">
+            <FontIcon iconLiteral="bi-shop" iconSize="150" layoutX="219.0" layoutY="391.0" />
+            <Label layoutX="377.0" layoutY="278.0" text="Easy">
                <font>
-                  <Font name="System Bold" size="38.0" />
+                  <Font name="Segoe UI Semilight" size="72.0" />
                </font>
             </Label>
+            <Label layoutX="121.0" layoutY="420.0" text="Hello there! We're so glad you're here. Let's shop together.">
+               <font>
+                  <Font name="Segoe UI Semilight" size="28.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btn_Start" layoutX="438.0" layoutY="494.0" style="-fx-background-color: #E2E2E2;" text=" ">
+               <graphic>
+                  <FontIcon iconLiteral="bi-arrow-bar-right" iconSize="30" selectionFill="#050505" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor>
+            </JFXButton>
          </children>
       </Pane>
    </children>

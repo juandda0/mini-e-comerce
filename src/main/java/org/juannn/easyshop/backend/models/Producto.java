@@ -1,24 +1,28 @@
 package org.juannn.easyshop.backend.models;
 
-import java.util.Date;
+public class Producto {
 
-public class Articulo {
     private int id;
     private String nombre;
-    private String descripcion;
     private double precio;
-    private int cantidad;
-    private String categoria;
-    private Date fechaActualizacion;
+    private String imageRut;
+    private String category;
 
-    public Articulo(int id, String nombre, String descripcion, double precio, int stock, String categoria) {
+    /*private String descripcion;
+    private int cantidad;
+    private Date fechaActualizacion;
+    */
+
+    public Producto(int id, String nombre, double precio, String imageRut, String category/*, String descripcion, int stock, */) {
         this.id = id;
         this.nombre = nombre;
-        this.descripcion = descripcion;
         this.precio = precio;
+        this.imageRut = imageRut;
+        this.category = category;
+        /*this.descripcion = descripcion;
         this.cantidad = stock;
-        this.categoria = categoria;
-        this.fechaActualizacion = new Date(); // Fecha de creación o última actualización
+
+        this.fechaActualizacion = new Date(); // Fecha de creación o última actualización*/
     }
 
     // Getters y Setters
@@ -38,16 +42,32 @@ public class Articulo {
         this.nombre = nombre;
     }
 
-    public String getDescripcion() {
+    public double getPrecio() {
+        return precio;
+    }
+
+    public String getImageRut() {
+        return imageRut;
+    }
+
+    public void setImageRut(String imageRut) {
+        this.imageRut = imageRut;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
+    }
+
+    /*public String getDescripcion() {
         return descripcion;
     }
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
-    }
-
-    public double getPrecio() {
-        return precio;
     }
 
     public void setPrecio(double precio) {
@@ -62,13 +82,10 @@ public class Articulo {
         this.cantidad = cantidad;
     }
 
-    public String getCategoria() {
-        return categoria;
-    }
 
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
+
+
+
 
     public Date getFechaActualizacion() {
         return fechaActualizacion;
@@ -103,4 +120,5 @@ public class Articulo {
                 ", fechaActualizacion=" + fechaActualizacion +
                 '}';
     }
+    */
 }

@@ -4,29 +4,26 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Inventario {
-    private ArrayList<Articulo> productos;
-
-    public Inventario() {
-        this.productos = new ArrayList<>();
-    }
+    private static ArrayList<Producto> productos = new ArrayList<>();
 
     // Método para agregar un artículo al inventario
-    public void agregarArticulo(Articulo articulo) {
-        if (articulo != null) {
-            productos.add(articulo);
+    public static void agregarArticulo(Producto producto) {
+        if (producto != null) {
+            productos.add(producto);
         }
     }
 
     // Método para buscar un artículo por su ID
-    public Articulo buscarArticuloPorId(int id) {
-        for (Articulo articulo : productos) {
-            if (articulo.getId() == id) {
-                return articulo;
+    public Producto buscarArticuloPorId(int id) {
+        for (Producto producto : productos) {
+            if (producto.getId() == id) {
+                return producto;
             }
         }
         return null;  // Retorna null si no lo encuentra
     }
 
+    /*
     // Método para actualizar un artículo en el inventario por su ID
     public boolean actualizarArticulo(int id, String nuevoNombre, String nuevaDescripcion, double nuevoPrecio, int nuevaCantidad, String nuevaCategoria) {
         Articulo articulo = buscarArticuloPorId(id);
@@ -41,24 +38,27 @@ public class Inventario {
         }
         return false;  // Retorna false si no encontró el artículo con ese ID
     }
+*/
 
     // Método para eliminar un artículo del inventario por su ID
     public boolean eliminarArticulo(int id) {
-        Articulo articulo = buscarArticuloPorId(id);
-        if (articulo != null) {
-            productos.remove(articulo);
+        Producto producto = buscarArticuloPorId(id);
+        if (producto != null) {
+            productos.remove(producto);
             return true;  // Retorna true si se eliminó correctamente
         }
         return false;  // Retorna false si no encontró el artículo con ese ID
     }
 
     // Método para obtener todos los artículos del inventario
-    public ArrayList<Articulo> obtenerTodosLosArticulos() {
+    public ArrayList<Producto> obtenerTodosLosArticulos() {
         return new ArrayList<>(productos);
     }
 
     // Método para obtener el tamaño del inventario (número de productos)
-    public int obtenerTamano() {
+    public int obtenerTamaño() {
         return productos.size();
     }
+
+
 }

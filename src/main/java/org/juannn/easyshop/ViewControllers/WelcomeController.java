@@ -1,5 +1,6 @@
 package org.juannn.easyshop.ViewControllers;
 
+import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import org.juannn.easyshop.Navigator;
@@ -7,13 +8,13 @@ import org.juannn.easyshop.Navigator;
 public class WelcomeController {
 
     @FXML
-    private Button btnStart;
+    private JFXButton btn_Start;
 
     public WelcomeController() {
     }
 
     @FXML
     public void initialize(){
-        btnStart.setOnAction(event -> Navigator.navigateTo("catalog"));
+        btn_Start.setOnAction(event -> Navigator.navigateTo("login"));
     }
 }

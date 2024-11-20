@@ -25,6 +25,7 @@ public class Navigator {
         viewMap.put("user", "/org/juannn/easyshop/UserView.fxml");
         viewMap.put("login", "/org/juannn/easyshop/LoginView.fxml");
         viewMap.put("regist", "/org/juannn/easyshop/RegisterView.fxml");
+        viewMap.put("product", "/org/juannn/easyshop/ProductView.fxml");
     }
 
     public static void navigateTo(String viewName) {
