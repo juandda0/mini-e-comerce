@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juannn.easyshop.ViewControllers.LoginController">
+   <children>
+      <Pane layoutX="7.0" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: #E9E9E9;">
+         <children>
+            <Pane layoutX="242.0" layoutY="46.0" prefHeight="608.0" prefWidth="467.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10;">
+               <children>
+                  <Label layoutX="109.0" layoutY="68.0" text="Agent Login">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="45.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUser" layoutX="95.0" layoutY="287.0" prefHeight="25.0" prefWidth="282.0">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField fx:id="txtPassword" layoutX="95.0" layoutY="369.0" prefHeight="25.0" prefWidth="282.0">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="12.0" />
+                     </font>
+                  </PasswordField>
+                  <Label fx:id="userLabel1" layoutX="107.0" layoutY="159.0" text="Hey, enter your details to get sign in">
+                     <font>
+                        <Font name="Segoe UI Symbol" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userLabel11" layoutX="177.0" layoutY="184.0" text="to your account">
+                     <font>
+                        <Font name="Segoe UI Symbol" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="userLabel111" layoutX="94.0" layoutY="257.0" text="Email">
+                     <font>
+                        <Font name="Segoe UI Light" size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconLiteral="ci-email" iconSize="15" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="userLabel1111" layoutX="95.0" layoutY="340.0" text="Password">
+                     <font>
+                        <Font name="Segoe UI Semilight" size="15.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconLiteral="bi-lock" iconSize="15" />
+                     </graphic>
+                  </Label>
+                  <Label fx:id="userLabel11111" layoutX="146.0" layoutY="412.0" text="Having trouble in sign in?">
+                     <font>
+                        <Font name="Segoe UI Symbol" size="13.0" />
+                     </font>
+                     <graphic>
+                        <FontIcon iconLiteral="bi-arrow-clockwise" iconSize="15" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </Label>
+                  <JFXButton fx:id="btn_Login" layoutX="95.0" layoutY="463.0" prefHeight="38.0" prefWidth="282.0" style="-fx-background-color: #000000;" text="Sign in" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="12.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Separator layoutX="153.0" layoutY="432.0" prefHeight="2.0" prefWidth="165.0" />
+                  <Label fx:id="userLabel111111" layoutX="103.0" layoutY="521.0" text="Don't have an account?">
+                     <font>
+                        <Font name="Segoe UI Symbol" size="15.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="btn_Regist" layoutX="258.0" layoutY="518.0" prefHeight="27.0" prefWidth="97.0" text="Request Now">
+                     <font>
+                        <Font name="Segoe UI Semibold" size="13.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

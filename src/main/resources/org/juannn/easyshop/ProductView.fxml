@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juannn.easyshop.ViewControllers.ProductController">
+   <children>
+      <Pane layoutX="4.0" layoutY="-5.0" prefHeight="98.0" prefWidth="950.0" style="-fx-background-color: #E9E9E9;" />
+      <Label fx:id="lbl_title2" layoutX="114.0" layoutY="36.0" text="Shop">
+         <font>
+            <Font name="Segoe UI Semibold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Label>
+      <FontIcon fx:id="icon_title" iconLiteral="bi-shop" iconSize="28" layoutX="31.0" layoutY="65.0" />
+      <Label fx:id="lbl_title1" layoutX="69.0" layoutY="35.0" text="Easy">
+         <font>
+            <Font name="Segoe UI Semilight" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="CLOSED_HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="832.0" layoutY="45.0" text="My account">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Label>
+      <FontIcon iconLiteral="ci-user" iconSize="20" layoutX="809.0" layoutY="63.0" />
+      <FontIcon iconLiteral="bi-cart2" iconSize="20" layoutX="729.0" layoutY="64.0" />
+      <Label layoutX="754.0" layoutY="45.0" text="Cart">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="409.0" fitWidth="406.0" layoutX="59.0" layoutY="135.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../Images/64521603-suéter-para-la-ropa-aislada-en-el-fondo-blanco.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_name" layoutX="567.0" layoutY="193.0" text="Product name">
+         <font>
+            <Font name="Segoe UI Semibold" size="35.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_category" layoutX="566.0" layoutY="167.0" text="Category">
+         <font>
+            <Font name="Segoe UI Semilight" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_price" layoutX="568.0" layoutY="294.0" text="\$149.00">
+         <font>
+            <Font name="Segoe UI Semilight" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn_add" layoutX="565.0" layoutY="538.0" prefHeight="38.0" prefWidth="267.0" style="-fx-background-color: #000000;" text="Add to cart" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="15.0" />
+         </font>
+         <graphic>
+            <FontIcon iconColor="WHITE" iconLiteral="bi-cart2" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="cbx_quantity" labelFloat="true" layoutX="563.0" layoutY="485.0" prefHeight="26.0" prefWidth="171.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></JFXComboBox>
+      <FontIcon iconLiteral="bi-star-fill" iconSize="20" layoutX="600.0" layoutY="275.0" text="" />
+      <FontIcon iconLiteral="bi-star-fill" iconSize="20" layoutX="625.0" layoutY="275.0" />
+      <FontIcon iconLiteral="bi-star-half" iconSize="20" layoutX="701.0" layoutY="275.0" text="" />
+      <JFXButton fx:id="btn_wish" layoutX="840.0" layoutY="537.0" prefHeight="38.0" prefWidth="54.0" style="-fx-background-color: #000000;" text=" " textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Symbol" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </JFXButton>
+      <FontIcon iconColor="WHITE" iconLiteral="bi-heart" iconSize="20" layoutX="857.0" layoutY="565.0" text="" wrappingWidth="20.0" />
+      <FontIcon iconLiteral="bi-star-fill" iconSize="20" layoutX="675.0" layoutY="275.0" />
+      <FontIcon iconLiteral="bi-star-fill" iconSize="20" layoutX="650.0" layoutY="275.0" />
+      <Label layoutX="567.0" layoutY="253.0" text="4.5">
+         <font>
+            <Font name="Segoe UI Semilight" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="726.0" layoutY="253.0" text="(5)">
+         <font>
+            <Font name="Segoe UI Semilight" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="112.0" fitWidth="120.0" layoutX="59.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/64521603-suéter-para-la-ropa-aislada-en-el-fondo-blanco.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="119.0" layoutX="203.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/64521603-suéter-para-la-ropa-aislada-en-el-fondo-blanco.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="119.0" layoutX="346.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/64521603-suéter-para-la-ropa-aislada-en-el-fondo-blanco.jpg" />
+         </image>
+      </ImageView>
+      <FontIcon iconLiteral="ci-delivery-truck" iconSize="30" layoutX="574.0" layoutY="620.0" />
+      <Label layoutX="613.0" layoutY="597.0" text="Free delivery on orders over $30.0">
+         <font>
+            <Font name="Segoe UI Semibold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="587.0" layoutY="434.0" text="Delivery in 3-5 business days">
+         <font>
+            <Font name="Segoe UI Symbol" size="16.0" />
+         </font>
+      </Label>
+      <FontIcon iconLiteral="ci-shopping-bag" iconSize="20" layoutX="558.0" layoutY="455.0" />
+   </children>
+</AnchorPane>

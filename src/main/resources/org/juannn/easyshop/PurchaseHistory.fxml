@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juannn.easyshop.PurchaseHistory">
+   <children>
+      <Pane layoutX="16.0" layoutY="10.0" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="37.0" layoutY="42.0" text="Purchase History">
+               <font>
+                  <Font size="38.0" />
+               </font>
+            </Label>
+            <Pane layoutX="37.0" layoutY="137.0" prefHeight="200.0" prefWidth="365.0" style="-fx-background-color: #636060;">
+               <children>
+                  <ImageView fitHeight="138.0" fitWidth="136.0" layoutX="28.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/64521603-suéter-para-la-ropa-aislada-en-el-fondo-blanco.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="190.0" layoutY="25.0" text="sweater">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="190.0" layoutY="89.0" text="delivered" textFill="#00ff40">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="37.0" layoutY="363.0" prefHeight="200.0" prefWidth="365.0" style="-fx-background-color: #636060;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/warmfit-merino-100-shirt.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="186.0" layoutY="45.0" text="Tracksuit">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="183.0" layoutY="100.0" text="delivered" textFill="#00ff40">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="421.0" layoutY="137.0" prefHeight="200.0" prefWidth="365.0" style="-fx-background-color: #636060;">
+               <children>
+                  <ImageView fitHeight="138.0" fitWidth="136.0" layoutX="28.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/3001000051433-1723349121-210.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="190.0" layoutY="25.0" text="Suit">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="183.0" layoutY="93.0" text="refunded" textFill="RED">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="421.0" layoutY="363.0" prefHeight="200.0" prefWidth="365.0" style="-fx-background-color: #636060;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="32.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/16801678310246.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="186.0" layoutY="45.0" text="T-shirt">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="186.0" layoutY="100.0" text="refunded" textFill="RED">
+                     <font>
+                        <Font size="38.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
