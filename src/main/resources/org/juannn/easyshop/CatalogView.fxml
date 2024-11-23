@@ -52,7 +52,7 @@
                         <Cursor fx:constant="OPEN_HAND" />
                      </cursor>
                   </Label>
-                  <Label layoutX="831.0" layoutY="39.0" text="My account">
+                  <Label fx:id="lbl_account" layoutX="831.0" layoutY="39.0" text="My account">
                      <font>
                         <Font name="Segoe UI Semibold" size="14.0" />
                      </font>

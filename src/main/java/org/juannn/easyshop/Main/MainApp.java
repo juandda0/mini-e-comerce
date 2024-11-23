@@ -10,7 +10,7 @@ public class MainApp extends Application {
         public void start(Stage primaryStage) {
             Navigator.setMainStage(primaryStage);
             Navigator.initialize();
-            Navigator.navigateTo("login");
+            Navigator.navigateTo("user");
         }
 
         public static void main(String[] args) {
