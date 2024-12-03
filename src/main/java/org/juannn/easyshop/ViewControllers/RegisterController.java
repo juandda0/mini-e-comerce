@@ -3,67 +3,78 @@ package org.juannn.easyshop.ViewControllers;
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import org.juannn.easyshop.Navigator;
-import org.juannn.easyshop.backend.data.BBDD;
+import org.juannn.easyshop.backend.persistencia.BBDD;
 
 public class RegisterController {
 
-    // Campos de texto y contraseñas
     @FXML
-    private TextField txt_Email;
+    private TextField txt_Email;  // Campo de texto para el correo electrónico
 
     @FXML
-    private TextField txt_UserName;
+    private TextField txt_UserName;  // Campo de texto para el nombre de usuario
 
     @FXML
-    private PasswordField txt_Password;
+    private PasswordField txt_Password;  // Campo para la contraseña del usuario
 
     @FXML
-    private PasswordField txt_ConfirmPassword;
-
-    // Botones
-    @FXML
-    private JFXButton btn_Register;
+    private PasswordField txt_ConfirmPassword;  // Campo para confirmar la contraseña
 
     @FXML
-    private JFXButton btn_SingIn;
+    private JFXButton btn_Register;  // Botón para registrar al usuario
+
+    @FXML
+    private JFXButton btn_SingIn;  // Botón para ir a la pantalla de inicio de sesión
 
     @FXML
     public void initialize() {
+        // Navegar al login cuando se haga clic en "Iniciar sesión"
         btn_SingIn.setOnAction(event -> Navigator.navigateTo("login"));
+
+        // Manejar el evento del botón de registro
         btn_Register.setOnAction(event -> handleRegisterAction());
     }
 
     @FXML
     private void handleRegisterAction() {
-        String nombre = txt_UserName.getText();
+        // Obtener los valores de los campos
         String email = txt_Email.getText();
-        String contrasena = txt_Password.getText();
-        String confirmContrasena = txt_ConfirmPassword.getText();
+        String userName = txt_UserName.getText();
+        String password = txt_Password.getText();
+        String confirmPassword = txt_ConfirmPassword.getText();
 
-        if (!contrasena.equals(confirmContrasena)) {
+        // Verificar que los campos no estén vacíos
+        if (email.isEmpty() || userName.isEmpty() || password.isEmpty() || confirmPassword.isEmpty()) {
+            showAlert("Error", "Por favor, ingrese todos los campos.");
+            return;
+        }
+
+        // Verificar que las contraseñas coincidan
+        if (!password.equals(confirmPassword)) {
             showAlert("Error", "Las contraseñas no coinciden.");
             return;
         }
 
-        boolean registrado = BBDD.registrarUsuario(nombre, email, contrasena);
+        // Intentar registrar el usuario
+        boolean registroExitoso = BBDD.registrar(userName, email, password);
 
-        if (registrado) {
+        // Mostrar mensaje de éxito o error
+        if (registroExitoso) {
             showAlert("Éxito", "Usuario registrado exitosamente.");
-            Navigator.navigateTo("login"); // Navegar a login
+            Navigator.navigateTo("login");  // Navegar al login después de registrar
         } else {
             showAlert("Error", "El correo electrónico ya está registrado.");
         }
     }
 
+    // Método para mostrar alertas con mensajes personalizados
     private void showAlert(String title, String message) {
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle(title);
+        alert.setHeaderText(null);
         alert.setContentText(message);
         alert.showAndWait();
     }
-
 }
